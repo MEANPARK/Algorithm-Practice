@@ -22,7 +22,7 @@ class Solution {
         for(String target : targets) {
             for(char c : target.toCharArray()) {
                 if(map.getOrDefault(c, 0) == 0) {
-                    answer[aindex] = 0;
+                    answer[aindex] = 0; // target에 존재하지 않으면 종료
                     break;
                 }
                 else {
